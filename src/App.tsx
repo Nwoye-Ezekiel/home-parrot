@@ -1,7 +1,15 @@
+import Home from 'components/pages/home';
+import About from 'components/pages/about';
+import FeaturedListings from 'components/featured-listings';
+import DetailedListings from 'components/detailed-listings';
+
 function App() {
   return (
     <div>
-      <h1>Hello World</h1>
+      <Home />
+      <About />
+      <FeaturedListings />
+      <DetailedListings />
     </div>
   );
 }
