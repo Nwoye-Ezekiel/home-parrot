@@ -1,7 +1,7 @@
 ## Project Setup
 
-This project was created with `Create React App`
-To clone this project, run the follow commands on your terminal
+This project was created with `Create React App`.
+To clone this project, run the follow commands on your terminal:
 
 ```sh
 git clone https://github.com/Nwoye-Ezekiel/home-parrot.git
