@@ -1,0 +1,120 @@
+{
+  "listings": [
+    {
+      "id": 1,
+      "voucher": "£100 Uber Voucher",
+      "name": "Janet Poole House",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel elementum nibh. Sed rutrum, enim eu dignissim porttitor, quam sem fermentum augue, non pharetra ligula diam ut ante.",
+      "performance": "price dropped",
+      "starting_price": "£399",
+      "cheapest_period": "Cheapest in the past 5 months",
+      "distance": {
+        "walk": "4 mins",
+        "car": "2 mins",
+        "bus": "2 mins"
+      },
+      "facilities": ["Kitchen", "Furnished", "On-site Laundry (Free)", "WiFi"],
+      "image_urls": ["https://picsum.photos/200/300", "https://picsum.photos/200/300"],
+      "total_price": {
+        "entire_place": "£399",
+        "shared_room": "£399",
+        "private_room": "£399"
+      },
+      "rating": "4",
+      "reviews": 2,
+      "featured": true
+    },
+    {
+      "id": 2,
+      "voucher": "£100 Uber Voucher",
+      "name": "Janet Poole House",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel elementum nibh. Sed rutrum, enim eu dignissim porttitor, quam sem fermentum augue, non pharetra ligula diam ut ante.",
+      "performance": "price dropped",
+      "starting_price": "£399",
+      "cheapest_period": "Cheapest in the past 5 months",
+      "distance": {
+        "walk": "4 mins",
+        "bus": "2 mins"
+      },
+      "facilities": ["Kitchen", "Furnished", "Bike Storage", "Reception"],
+      "image_urls": ["https://picsum.photos/200/300", "https://picsum.photos/200/300"],
+      "total_price": {
+        "entire_place": "£399",
+        "shared_room": "£399",
+        "private_room": "£399"
+      },
+      "rating": "5",
+      "reviews": 2,
+      "featured": true
+    },
+    {
+      "id": 3,
+      "voucher": "£100 Uber Voucher",
+      "name": "Janet Poole House",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel elementum nibh. Sed rutrum, enim eu dignissim porttitor, quam sem fermentum augue, non pharetra ligula diam ut ante.",
+      "performance": "price dropped",
+      "starting_price": "£399",
+      "cheapest_period": "Cheapest in the past 5 months",
+      "distance": {
+        "walk": "4 mins",
+        "bus": "2 mins"
+      },
+      "facilities": ["Kitchen", "Furnished", "Bike Storage", "Reception"],
+      "image_urls": ["https://picsum.photos/200/300", "https://picsum.photos/200/300"],
+      "total_price": {
+        "entire_place": "£399",
+        "shared_room": "£399",
+        "private_room": "£399"
+      },
+      "rating": "5",
+      "reviews": 2,
+      "featured": true
+    },
+    {
+      "id": 4,
+      "voucher": "£100 Uber Voucher",
+      "name": "Janet Poole House",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel elementum nibh. Sed rutrum, enim eu dignissim porttitor, quam sem fermentum augue, non pharetra ligula diam ut ante.",
+      "performance": "price dropped",
+      "starting_price": "£399",
+      "cheapest_period": "Cheapest in the past 5 months",
+      "distance": {
+        "walk": "4 mins",
+        "bus": "2 mins"
+      },
+      "facilities": ["Kitchen", "Furnished", "Bike Storage", "Reception"],
+      "image_urls": ["https://picsum.photos/200/300", "https://picsum.photos/200/300"],
+      "total_price": {
+        "entire_place": "£399",
+        "shared_room": "£399",
+        "private_room": "£399"
+      },
+      "rating": "5",
+      "reviews": 2,
+      "featured": true
+    },
+    {
+      "id": 5,
+      "voucher": "£100 Uber Voucher",
+      "name": "Janet Poole House",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel elementum nibh. Sed rutrum, enim eu dignissim porttitor, quam sem fermentum augue, non pharetra ligula diam ut ante.",
+      "performance": "price dropped",
+      "starting_price": "£399",
+      "cheapest_period": "Cheapest in the past 5 months",
+      "distance": {
+        "walk": "4 mins",
+        "bus": "2 mins"
+      },
+      "facilities": ["Kitchen", "Furnished", "Bike Storage", "Reception"],
+      "image_urls": ["https://picsum.photos/200/300", "https://picsum.photos/200/300"],
+      "total_price": {
+        "entire_place": "£399",
+        "shared_room": "£399",
+        "private_room": "£399"
+      },
+      "rating": "5",
+      "reviews": 2,
+      "featured": true
+    }
+  ]
+}
