@@ -26,3 +26,8 @@ npm start
 ```
 
 If your browser doesn't open the app automatically after it has loaded, you can simply type the server address shown on the terminal into your browser to open the app.
+
+You can as well view the app which is hosted on `Vercel` by clicking on this link 👉
+[Home Parrot]
+
+[Home Parrot]: https://home-parrot.vercel.app/
