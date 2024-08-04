@@ -58,9 +58,9 @@ export default function FeaturedListings() {
                   {listing.name}
                 </h3>
                 <Button
+                  color="secondary"
+                  className="text-black"
                   onClick={() => scrollToCard(`${hoveredCardId}_listing`)}
-                  className="capitalize font-cabinet"
-                  variant="contained"
                 >
                   View Details
                 </Button>
@@ -79,38 +79,38 @@ export default function FeaturedListings() {
                   </div>
                 )}
               </div>
-              <div className="flex flex-col p-5 pb-6 space-y-5">
+              <div className="flex flex-col p-5 pb-6 space-y-3.5">
                 <div className="space-y-1">
                   <h3 className="font-clash font-semibold text-lg">{listing.name}</h3>
                   <div className="flex items-center space-x-1.5">
-                    <span className="text-[15px]">From</span>
+                    <span className="text-sm">From</span>
                     <div>
                       <span className="text-lg font-semibold text-tertiary">
                         {listing.starting_price}
                       </span>
-                      <span className="text-[15px]">/week</span>
+                      <span className="text-sm">/week</span>
                     </div>
                   </div>
-                  <div className="bg-primary text-white px-2 p-1 w-fit text-[15px] font-medium rounded">
+                  <div className="bg-primary text-white px-2 p-1 w-fit text-sm font-medium rounded">
                     {listing.cheapest_period}
                   </div>
                 </div>
                 <div className="flex items-end space-x-4">
                   {listing.distance.walk && (
                     <div className="flex items-center">
-                      <DirectionsWalk className="text-gray-700" fontSize="small" />{' '}
+                      <DirectionsWalk className="text-gray-700 text-lg" />{' '}
                       <span className="text-sm font-regular">{listing.distance.walk}</span>
                     </div>
                   )}
                   {listing.distance.car && (
                     <div className="flex items-center space-x-1">
-                      <DriveEta className="text-gray-700" fontSize="small" />{' '}
+                      <DriveEta className="text-gray-700 text-lg" />{' '}
                       <span className="text-sm font-regular">{listing.distance.car}</span>
                     </div>
                   )}
                   {listing.distance.bus && (
                     <div className="flex items-center space-x-1">
-                      <DirectionsBus className="text-gray-700" fontSize="small" />{' '}
+                      <DirectionsBus className="text-gray-700 text-lg" />{' '}
                       <span className="text-sm font-regular">{listing.distance.bus}</span>
                     </div>
                   )}

@@ -1,6 +1,14 @@
 import data from 'data/index.json';
 import { Listing } from 'components/types';
-import { DirectionsWalk, DriveEta, DirectionsBus, School, Apartment } from '@mui/icons-material';
+import {
+  DirectionsWalk,
+  DriveEta,
+  DirectionsBus,
+  School,
+  Apartment,
+  Star,
+  StarBorder,
+} from '@mui/icons-material';
 import { Button } from '@mui/material';
 
 export default function DetailedListings() {
@@ -37,56 +45,66 @@ export default function DetailedListings() {
                 <div>
                   <div className="flex space-x-1">
                     <h3 className="font-clash font-semibold text-lg mb-1">{listing.name}</h3>
-                    {listing.reviews && <span className="text-sm">({listing.reviews})</span>}
+                    <div>
+                      {listing.rating &&
+                        [...Array(5).keys()].map((rating) => {
+                          return rating + 1 <= +listing.rating ? (
+                            <Star fontSize="small" key={rating} className="text-secondary" />
+                          ) : (
+                            <StarBorder fontSize="small" key={rating} className="text-gray-700" />
+                          );
+                        })}
+                    </div>
+                    {listing.reviews && <span className="text-sm mt-1">({listing.reviews})</span>}
                   </div>
                   <p className="text-sm mb-3">{listing.description}</p>
                   <div className="space-y-2">
                     <div className="flex items-start">
                       <div className="flex items-center space-x-1 mr-1">
-                        <School className="text-gray-700" fontSize="small" />
+                        <School className="text-gray-700 text-lg" />
                         <span className="text-sm font-medium text-gray-700 flex-shrink-0">
                           Distance to campus:
                         </span>
                       </div>
-                      <div className="flex items-end space-x-1 mr-2">
+                      <div className="flex items-end space-x-1.5 mr-2">
                         {listing.distance.walk && (
                           <div className="flex items-center flex-shrink-0">
-                            <DirectionsWalk className="text-gray-700" fontSize="small" />{' '}
+                            <DirectionsWalk className="text-gray-700 text-lg" />{' '}
                             <span className="text-sm font-regular">{listing.distance.walk}</span>
                           </div>
                         )}
                         {listing.distance.car && (
                           <div className="flex items-center space-x-1 flex-shrink-0">
-                            <DriveEta className="text-gray-700" fontSize="small" />{' '}
+                            <DriveEta className="text-gray-700 text-lg" />{' '}
                             <span className="text-sm font-regular">{listing.distance.car}</span>
                           </div>
                         )}
                         {listing.distance.bus && (
                           <div className="flex items-center space-x-1 flex-shrink-0">
-                            <DirectionsBus className="text-gray-700" fontSize="small" />{' '}
+                            <DirectionsBus className="text-gray-700 text-lg" />{' '}
                             <span className="text-sm font-regular">{listing.distance.bus}</span>
                           </div>
                         )}
                       </div>
-                      <p className="text-sm text-green font-medium">View Map</p>
+                      <p className="text-sm text-green font-semibold cursor-pointer">View Map</p>
                     </div>
                     <div className="flex items-start space-x-2">
                       <div className="flex items-center space-x-1">
-                        <Apartment className="text-gray-700" fontSize="small" />
+                        <Apartment className="text-gray-700 text-lg" />
                         <span className="text-sm font-medium text-gray-700">Facilities:</span>
                       </div>
-                      <div className="flex flex-wrap items-start">
+                      <div className="flex flex-wrap space-x-1 items-start">
                         {listing.facilities.map((facility, index) => {
                           return (
                             <span className="text-sm flex-shrink-0" key={index}>
                               {facility}
-                              {index !== listing.facilities.length - 1 && ', '}
+                              {index !== listing.facilities.length - 1 && ','}
                             </span>
                           );
                         })}
                       </div>
                     </div>
-                    <div className="flex space-x-2 mt-1">
+                    <div className="flex space-x-2 pt-0.5">
                       <div className="bg-primary text-white px-2 p-1 w-fit text-sm font-medium rounded">
                         {listing.cheapest_period}
                       </div>
@@ -130,12 +148,7 @@ export default function DetailedListings() {
                       </div>
                     )}
                   </div>
-                  <Button
-                    fullWidth
-                    color="secondary"
-                    className="capitalize font-cabinet"
-                    variant="contained"
-                  >
+                  <Button fullWidth color="secondary" className="text-black">
                     View Rooms
                   </Button>
                 </div>

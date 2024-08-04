@@ -5,7 +5,7 @@
       "voucher": "£100 Uber Voucher",
       "name": "Janet Poole House",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel elementum nibh. Sed rutrum, enim eu dignissim porttitor, quam sem fermentum augue, non pharetra ligula diam ut ante.",
-      "performance": "price dropped",
+      "performance": "Price dropped",
       "starting_price": "£399",
       "cheapest_period": "Cheapest in the past 5 months",
       "distance": {
@@ -20,8 +20,8 @@
         "shared_room": "£399",
         "private_room": "£399"
       },
-      "rating": "4",
-      "reviews": 2,
+      "rating": "2",
+      "reviews": 1,
       "featured": true
     },
     {
@@ -29,7 +29,7 @@
       "voucher": "£100 Uber Voucher",
       "name": "Janet Poole House",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel elementum nibh. Sed rutrum, enim eu dignissim porttitor, quam sem fermentum augue, non pharetra ligula diam ut ante.",
-      "performance": "price dropped",
+      "performance": "Price dropped",
       "starting_price": "£399",
       "cheapest_period": "Cheapest in the past 5 months",
       "distance": {
@@ -43,8 +43,8 @@
         "shared_room": "£399",
         "private_room": "£399"
       },
-      "rating": "5",
-      "reviews": 2,
+      "rating": "3",
+      "reviews": 10,
       "featured": true
     },
     {
@@ -52,7 +52,7 @@
       "voucher": "£100 Uber Voucher",
       "name": "Janet Poole House",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel elementum nibh. Sed rutrum, enim eu dignissim porttitor, quam sem fermentum augue, non pharetra ligula diam ut ante.",
-      "performance": "price dropped",
+      "performance": "Price dropped",
       "starting_price": "£399",
       "cheapest_period": "Cheapest in the past 5 months",
       "distance": {
@@ -66,8 +66,8 @@
         "shared_room": "£399",
         "private_room": "£399"
       },
-      "rating": "5",
-      "reviews": 2,
+      "rating": "1",
+      "reviews": 9,
       "featured": true
     },
     {
@@ -75,7 +75,7 @@
       "voucher": "£100 Uber Voucher",
       "name": "Janet Poole House",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel elementum nibh. Sed rutrum, enim eu dignissim porttitor, quam sem fermentum augue, non pharetra ligula diam ut ante.",
-      "performance": "price dropped",
+      "performance": "Price increased",
       "starting_price": "£399",
       "cheapest_period": "Cheapest in the past 5 months",
       "distance": {
@@ -90,7 +90,7 @@
         "private_room": "£399"
       },
       "rating": "5",
-      "reviews": 2,
+      "reviews": 20,
       "featured": true
     },
     {
@@ -98,7 +98,7 @@
       "voucher": "£100 Uber Voucher",
       "name": "Janet Poole House",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel elementum nibh. Sed rutrum, enim eu dignissim porttitor, quam sem fermentum augue, non pharetra ligula diam ut ante.",
-      "performance": "price dropped",
+      "performance": "Price dropped",
       "starting_price": "£399",
       "cheapest_period": "Cheapest in the past 5 months",
       "distance": {
@@ -112,8 +112,8 @@
         "shared_room": "£399",
         "private_room": "£399"
       },
-      "rating": "5",
-      "reviews": 2,
+      "rating": "0",
+      "reviews": 3,
       "featured": true
     }
   ]
