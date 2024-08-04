@@ -15,28 +15,14 @@ const theme = createTheme({
   components: {
     MuiButton: {
       defaultProps: {
-        disableElevation: true,
-        size: 'large',
+        size: 'medium',
+        color: 'primary',
         variant: 'contained',
+        disableElevation: true,
       },
       styleOverrides: {
         root: {
-          textTransform: 'none',
-        },
-        containedPrimary: {
-          ...tw`bg-secondary capitalize`,
-          color: tailwindTheme`colors.white` + '!important',
-          '&.Mui-disabled:disabled': {
-            ...tw`bg-gray-500`,
-          },
-        },
-        outlinedPrimary: {
-          borderColor: tailwindTheme`colors.primary` + '!important',
-          color: tailwindTheme`colors.primary` + '!important',
-        },
-        sizeLarge: {
-          height: '56px',
-          ...tw`px-8 text-base`,
+          ...tw`capitalize font-cabinet font-bold normal-case shadow-lg`,
         },
       },
     },
