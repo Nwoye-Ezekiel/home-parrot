@@ -22,7 +22,7 @@ export default function Header() {
         <div className="col-span-8 text-center space-x-5">
           {navigationLinks.map((link, index) => (
             <button key={index} onClick={() => scrollToSection(link.name)}>
-              <span className="capitalize font-clash font-semibold text-lg text-secondary">
+              <span className="capitalize font-clash font-semibold text-lg text-white">
                 {link.name}
               </span>
             </button>
