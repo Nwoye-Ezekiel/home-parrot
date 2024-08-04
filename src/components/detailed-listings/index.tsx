@@ -10,20 +10,25 @@ import {
   StarBorder,
 } from '@mui/icons-material';
 import { Button } from '@mui/material';
+import AnimateOnScroll from 'components/animate-on-scroll';
 
 export default function DetailedListings() {
   return (
     <div className="flex flex-col px-20 py-24 space-y-16 bg-secondary/[.5]">
       <div className="flex flex-col justify-center items-center space-y-8">
         <div className="relative w-full text-center">
-          <h1 className="text-6xl">Detailed Listings</h1>
+          <AnimateOnScroll refIndex={2}>
+            <h1 className="text-6xl">Detailed Listings</h1>
+          </AnimateOnScroll>
           <h1 className="text-7xl absolute top-12 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-[0.05] w-full">
             Detailed Listings
           </h1>
         </div>
-        <p className="max-w-lg text-center text-xl">
-          Explore every property, every feature and detail.
-        </p>
+        <AnimateOnScroll refIndex={4}>
+          <p className="max-w-lg text-center text-xl">
+            Explore every property, every feature and detail.
+          </p>
+        </AnimateOnScroll>
       </div>
       <div className="flex flex-col justify-center items-center space-y-6 pb-6 w-full">
         {data['listings'].map((listing: Listing) => {
@@ -38,7 +43,7 @@ export default function DetailedListings() {
                   style={{
                     backgroundImage: `url(${listing.image_urls[0]})`,
                   }}
-                  className="w-full h-full bg-no-repeat bg-center bg-cover rounded"
+                  className="w-full h-full bg-no-repeat bg-center bg-cover rounded-md"
                 ></div>
               </div>
               <div className="flex flex-col space-y-5 w-[55%]">

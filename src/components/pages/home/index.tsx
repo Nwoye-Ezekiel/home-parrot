@@ -15,7 +15,7 @@ export default function Home() {
         <AnimateOnScroll refIndex={0}>
           <h1 className="font-backline text-[7rem] text-secondary rotate-2">Home Parrot</h1>
         </AnimateOnScroll>
-        <AnimateOnScroll refIndex={1}>
+        <AnimateOnScroll refIndex={2}>
           <p className="text-white text-2xl">Your Loudest Advocate for Premium Properties!</p>
         </AnimateOnScroll>
       </div>

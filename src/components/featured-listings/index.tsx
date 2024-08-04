@@ -1,8 +1,16 @@
 import React, { useState } from 'react';
 import data from 'data/index.json';
 import { Listing } from 'components/types';
-import { DirectionsWalk, DriveEta, DirectionsBus, Sell } from '@mui/icons-material';
+import {
+  DirectionsWalk,
+  DriveEta,
+  DirectionsBus,
+  Sell,
+  Star,
+  StarBorder,
+} from '@mui/icons-material';
 import { Button } from '@mui/material';
+import AnimateOnScroll from 'components/animate-on-scroll';
 
 export default function FeaturedListings() {
   const [hoveredCardId, setHoveredCardId] = useState('');
@@ -23,14 +31,18 @@ export default function FeaturedListings() {
     >
       <div className="flex flex-col justify-center items-center space-y-8">
         <div className="relative w-full text-center">
-          <h1 className="text-6xl">Featured Listings</h1>
+          <AnimateOnScroll refIndex={2}>
+            <h1 className="text-6xl">Featured Listings</h1>
+          </AnimateOnScroll>
           <h1 className="text-7xl absolute top-12 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-[0.05] w-full">
             Featured Listings
           </h1>
         </div>
-        <p className="max-w-lg text-center text-xl">
-          Handpicked premium properties curated just for you.
-        </p>
+        <AnimateOnScroll refIndex={4}>
+          <p className="max-w-lg text-center text-xl">
+            Handpicked premium properties curated just for you.
+          </p>
+        </AnimateOnScroll>
       </div>
       <div className="flex space-x-6 overflow-x-scroll pb-6">
         {featuredListings.map((listing: Listing) => {
@@ -39,24 +51,34 @@ export default function FeaturedListings() {
               key={listing.id}
               onMouseOver={() => setHoveredCardId(`${listing.id}`)}
               onMouseLeave={() => setHoveredCardId('')}
-              className="shadow-lg bg-white w-80 rounded-xl overflow-hidden flex-shrink-0 relative cursor-pointer"
+              className="shadow-lg bg-white w-80 rounded-xl overflow-hidden flex-shrink-0 relative"
             >
               <div
-                className={`absolute top-0 left-0 h-full w-full bg-black/[.8] z-20 flex flex-col justify-center items-center transform space-y-3 ${
+                className={`absolute top-0 left-0 h-full w-full bg-primary/[.8] z-20 flex flex-col justify-center items-center transform space-y-3 cursor-default ${
                   hoveredCardId === `${listing.id}`
                     ? 'duration-200 opacity-100'
                     : 'duration-500 opacity-0'
                 }`}
               >
-                <h3
-                  className={`text-white text-xl font-clash font-semibold transform duration-500 ${
+                <div
+                  className={`flex flex-col justify-center items-center transform duration-500 ${
                     hoveredCardId === `${listing.id}`
                       ? 'translate-y-0 opacity-100'
                       : 'translate-y-full opacity-0'
                   }`}
                 >
-                  {listing.name}
-                </h3>
+                  <h3 className="text-white text-xl font-clash font-semibold">{listing.name}</h3>
+                  <div>
+                    {listing.rating &&
+                      [...Array(5).keys()].map((rating) => {
+                        return rating + 1 <= +listing.rating ? (
+                          <Star fontSize="small" key={rating} className="text-secondary" />
+                        ) : (
+                          <StarBorder fontSize="small" key={rating} className="text-white" />
+                        );
+                      })}
+                  </div>
+                </div>
                 <Button
                   color="secondary"
                   className="text-black"

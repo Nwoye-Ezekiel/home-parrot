@@ -39,7 +39,7 @@ const AnimateOnScroll = ({ children, refIndex, lastElement }: Props) => {
   }, [isInView]);
 
   return (
-    <div ref={ref} style={{ overflow: 'hidden' }}>
+    <div ref={ref}>
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 50 },
