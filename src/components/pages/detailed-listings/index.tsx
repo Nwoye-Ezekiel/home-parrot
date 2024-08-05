@@ -10,8 +10,20 @@ import {
 } from '@mui/icons-material';
 import { Button } from '@mui/material';
 import AnimateOnScroll from 'components/animate-on-scroll';
+import ImagePreview from 'components/image-preview';
+import { useState } from 'react';
 
 export default function DetailedListings() {
+  const [selectedListing, setSelectedListing] = useState<Listing | null>(null);
+
+  const handleViewRoomsClick = (listing: Listing) => {
+    setSelectedListing(listing);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedListing(null);
+  };
+
   return (
     <div
       id="detailed listings"
@@ -33,142 +45,151 @@ export default function DetailedListings() {
         </AnimateOnScroll>
       </div>
       <div className="flex flex-col justify-center items-center space-y-6 pb-6 w-full max-w-lg lgMd:max-w-[75%] mx-auto">
-        {data['listings'].map((listing: Listing) => {
-          return (
-            <div
-              id={`${listing.id}_listing`}
-              key={listing.id}
-              className="flex flex-col lgMd:flex-row p-5 shadow-lg bg-white w-full rounded-xl overflow-hidden relative gap-5 scroll-m-20"
-            >
-              <div className="h-[12rem] w-full lgMd:h-auto lgMd:w-[25%]">
-                <div
-                  style={{
-                    backgroundImage: `url(${listing.image_urls[0]})`,
-                  }}
-                  className="w-full h-full bg-green/[.2] bg-no-repeat bg-center bg-cover rounded-md"
-                ></div>
-              </div>
-              <div className="flex flex-col space-y-5 w-full lgMd:w-[55%]">
-                <div>
-                  <div className="flex flex-wrap gap-2 mb-2">
-                    <h3 className="font-clash font-semibold text-lg -mb-3">{listing.name}</h3>
-                    <div className="gap-1 flex items-center">
-                      <div className="flex items-center flex-shrink-0">
-                        {listing.rating &&
-                          [...Array(5).keys()].map((rating) => {
-                            return rating + 1 <= +listing.rating ? (
-                              <Star fontSize="small" key={rating} className="text-primary" />
-                            ) : (
-                              <Star fontSize="small" key={rating} className="text-black/[.1]" />
-                            );
-                          })}
-                      </div>
-                      {listing.reviews && (
-                        <span className="text-sm mt-1 flex justify-center items-center">
-                          ({listing.reviews})
-                        </span>
+        {data['listings'].map((listing: Listing) => (
+          <div
+            id={`${listing.id}_listing`}
+            key={listing.id}
+            className="flex flex-col lgMd:flex-row p-5 shadow-lg bg-white w-full rounded-xl overflow-hidden relative gap-5 scroll-m-20"
+          >
+            <div className="h-[12rem] w-full lgMd:h-auto lgMd:w-[25%]">
+              <div
+                style={{
+                  backgroundImage: `url(${listing.image_urls[0]})`,
+                }}
+                className="w-full h-full bg-green/[.2] bg-no-repeat bg-center bg-cover rounded-md"
+              ></div>
+            </div>
+            <div className="flex flex-col space-y-5 w-full lgMd:w-[55%]">
+              <div>
+                <div className="flex flex-wrap gap-2 mb-2">
+                  <h3 className="font-clash font-semibold text-lg -mb-3">{listing.name}</h3>
+                  <div className="gap-1 flex items-center">
+                    <div className="flex items-center flex-shrink-0">
+                      {listing.rating &&
+                        [...Array(5).keys()].map((rating) => (
+                          <Star
+                            fontSize="small"
+                            key={rating}
+                            className={
+                              rating + 1 <= +listing.rating ? 'text-primary' : 'text-black/[.1]'
+                            }
+                          />
+                        ))}
+                    </div>
+                    {listing.reviews && (
+                      <span className="text-sm mt-1 flex justify-center items-center">
+                        ({listing.reviews})
+                      </span>
+                    )}
+                  </div>
+                </div>
+                <p className="text-sm mb-3">{listing.description}</p>
+                <div className="space-y-2">
+                  <div className="flex flex-wrap items-start">
+                    <div className="flex items-center space-x-1 mr-1">
+                      <School className="text-gray-700 text-lg" />
+                      <span className="text-sm font-medium text-gray-700 flex-shrink-0">
+                        Distance to campus:
+                      </span>
+                    </div>
+                    <div className="flex flex-wrap items-end space-x-1.5 mr-2">
+                      {listing.distance.walk && (
+                        <div className="flex items-center flex-shrink-0">
+                          <DirectionsWalk className="text-gray-700 text-lg" />{' '}
+                          <span className="text-sm font-regular">{listing.distance.walk}</span>
+                        </div>
+                      )}
+                      {listing.distance.car && (
+                        <div className="flex items-center space-x-1 flex-shrink-0">
+                          <DriveEta className="text-gray-700 text-lg" />{' '}
+                          <span className="text-sm font-regular">{listing.distance.car}</span>
+                        </div>
+                      )}
+                      {listing.distance.bus && (
+                        <div className="flex items-center space-x-1 flex-shrink-0">
+                          <DirectionsBus className="text-gray-700 text-lg" />{' '}
+                          <span className="text-sm font-regular">{listing.distance.bus}</span>
+                        </div>
                       )}
                     </div>
+                    <p className="text-sm text-green font-semibold cursor-pointer">View Map</p>
                   </div>
-                  <p className="text-sm mb-3">{listing.description}</p>
-                  <div className="space-y-2">
+                  <div className="flex flex-wrap items-start gap-1">
+                    <div className="flex items-center space-x-1">
+                      <Apartment className="text-gray-700 text-lg" />
+                      <span className="text-sm font-medium text-gray-700">Facilities:</span>
+                    </div>
                     <div className="flex flex-wrap items-start">
-                      <div className="flex items-center space-x-1 mr-1">
-                        <School className="text-gray-700 text-lg" />
-                        <span className="text-sm font-medium text-gray-700 flex-shrink-0">
-                          Distance to campus:
+                      {listing.facilities.map((facility, index) => (
+                        <span className="text-sm flex-shrink-0 mr-1" key={index}>
+                          {facility}
+                          {index !== listing.facilities.length - 1 && ','}
                         </span>
-                      </div>
-                      <div className="flex flex-wrap items-end space-x-1.5 mr-2">
-                        {listing.distance.walk && (
-                          <div className="flex items-center flex-shrink-0">
-                            <DirectionsWalk className="text-gray-700 text-lg" />{' '}
-                            <span className="text-sm font-regular">{listing.distance.walk}</span>
-                          </div>
-                        )}
-                        {listing.distance.car && (
-                          <div className="flex items-center space-x-1 flex-shrink-0">
-                            <DriveEta className="text-gray-700 text-lg" />{' '}
-                            <span className="text-sm font-regular">{listing.distance.car}</span>
-                          </div>
-                        )}
-                        {listing.distance.bus && (
-                          <div className="flex items-center space-x-1 flex-shrink-0">
-                            <DirectionsBus className="text-gray-700 text-lg" />{' '}
-                            <span className="text-sm font-regular">{listing.distance.bus}</span>
-                          </div>
-                        )}
-                      </div>
-                      <p className="text-sm text-green font-semibold cursor-pointer">View Map</p>
-                    </div>
-                    <div className="flex flex-wrap items-start gap-1">
-                      <div className="flex items-center space-x-1">
-                        <Apartment className="text-gray-700 text-lg" />
-                        <span className="text-sm font-medium text-gray-700">Facilities:</span>
-                      </div>
-                      <div className="flex flex-wrap items-start">
-                        {listing.facilities.map((facility, index) => {
-                          return (
-                            <span className="text-sm flex-shrink-0 mr-1" key={index}>
-                              {facility}
-                              {index !== listing.facilities.length - 1 && ','}
-                            </span>
-                          );
-                        })}
-                      </div>
-                    </div>
-                    <div className="flex flex-wrap gap-2 pt-0.5">
-                      <div className="bg-secondary text-white px-2 p-1 w-fit text-sm font-medium rounded">
-                        {listing.cheapest_period}
-                      </div>
-                      <div className="bg-secondary text-white px-2 p-1 w-fit text-sm font-medium rounded">
-                        {listing.performance}
-                      </div>
+                      ))}
                     </div>
                   </div>
-                </div>
-              </div>
-              <div className="flex flex-col justify-between items-between w-full lgMd:w-[20%]">
-                <div className="flex w-full justify-start lgMd:justify-end">
-                  <div className="flex items-center space-x-1.5">
-                    <span className="text-sm">From</span>
-                    <div>
-                      <span className="text-lg font-semibold text-tertiary">
-                        {listing.starting_price}
-                      </span>
-                      <span className="text-sm">/week</span>
+                  <div className="flex flex-wrap gap-2 pt-0.5">
+                    <div className="bg-secondary text-white px-2 p-1 w-fit text-sm font-medium rounded">
+                      {listing.cheapest_period}
+                    </div>
+                    <div className="bg-secondary text-white px-2 p-1 w-fit text-sm font-medium rounded">
+                      {listing.performance}
                     </div>
                   </div>
-                </div>
-                <div className="space-y-3">
-                  <div className="flex flex-col space-y-1">
-                    {listing.total_price.entire_place && (
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm">Entire Place</span>
-                        <span className="text-sm">{listing.total_price.entire_place}</span>
-                      </div>
-                    )}
-                    {listing.total_price.shared_room && (
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm">Shared Room</span>
-                        <span className="text-sm">{listing.total_price.shared_room}</span>
-                      </div>
-                    )}
-                    {listing.total_price.private_room && (
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm">Private Room</span>
-                        <span className="text-sm">{listing.total_price.private_room}</span>
-                      </div>
-                    )}
-                  </div>
-                  <Button fullWidth className="text-black bg-primary">
-                    View Rooms
-                  </Button>
                 </div>
               </div>
             </div>
-          );
-        })}
+            <div className="flex flex-col justify-between items-between w-full lgMd:w-[20%]">
+              <div className="flex w-full justify-start lgMd:justify-end">
+                <div className="flex items-center space-x-1.5">
+                  <span className="text-sm">From</span>
+                  <div>
+                    <span className="text-lg font-semibold text-tertiary">
+                      {listing.starting_price}
+                    </span>
+                    <span className="text-sm">/week</span>
+                  </div>
+                </div>
+              </div>
+              <div className="space-y-3">
+                <div className="flex flex-col space-y-1">
+                  {listing.total_price.entire_place && (
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm">Entire Place</span>
+                      <span className="text-sm">{listing.total_price.entire_place}</span>
+                    </div>
+                  )}
+                  {listing.total_price.shared_room && (
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm">Shared Room</span>
+                      <span className="text-sm">{listing.total_price.shared_room}</span>
+                    </div>
+                  )}
+                  {listing.total_price.private_room && (
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm">Private Room</span>
+                      <span className="text-sm">{listing.total_price.private_room}</span>
+                    </div>
+                  )}
+                </div>
+                <Button
+                  onClick={() => handleViewRoomsClick(listing)}
+                  fullWidth
+                  className="text-black bg-primary"
+                >
+                  View Rooms
+                </Button>
+                {selectedListing && (
+                  <ImagePreview
+                    src={selectedListing?.id === listing.id ? selectedListing?.image_urls : []}
+                    open={selectedListing?.id === listing.id}
+                    handleClose={handleCloseModal}
+                  />
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
