@@ -52,7 +52,7 @@ export default function ({ open, src = [], handleClose }: ImagePreviewProps) {
               <span
                 key={`image indicator ${i}`}
                 className={`w-2 h-2 rounded-full cursor-pointer ${
-                  currentIndex === i ? 'bg-primary' : 'bg-gray-100/[.3]'
+                  currentIndex === i ? 'bg-primary' : 'bg-gray-100/[.5]'
                 }`}
                 onClick={() => setCurrentIndex(i)}
               />
