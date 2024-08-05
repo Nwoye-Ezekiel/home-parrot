@@ -50,8 +50,8 @@ export default function DetailedListings() {
               </div>
               <div className="flex flex-col space-y-5 w-full lgMd:w-[55%]">
                 <div>
-                  <div className="flex flex-wrap gap-2 mb-1">
-                    <h3 className="font-clash font-semibold text-lg">{listing.name}</h3>
+                  <div className="flex flex-wrap gap-2 mb-2">
+                    <h3 className="font-clash font-semibold text-lg -mb-3">{listing.name}</h3>
                     <div className="gap-1 flex items-center">
                       <div className="flex items-center flex-shrink-0">
                         {listing.rating &&
