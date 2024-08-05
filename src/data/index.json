@@ -14,7 +14,7 @@
         "bus": "2 mins"
       },
       "facilities": ["Kitchen", "Furnished", "On-site Laundry (Free)", "WiFi"],
-      "image_urls": ["https://picsum.photos/200/300", "https://picsum.photos/200/300"],
+      "image_urls": ["https://loremflickr.com/400/400/apartment?random=11", "https://loremflickr.com/400/400/apartment?random=12"],
       "total_price": {
         "entire_place": "£399",
         "shared_room": "£399",
@@ -36,7 +36,7 @@
         "bus": "2 mins"
       },
       "facilities": ["Kitchen", "Furnished", "Bike Storage", "Reception"],
-      "image_urls": ["https://picsum.photos/200/300", "https://picsum.photos/200/300"],
+      "image_urls": ["https://loremflickr.com/400/400/apartment?random=21", "https://loremflickr.com/400/400/apartment?random=22"],
       "total_price": {
         "entire_place": "£399",
         "shared_room": "£399",
@@ -58,7 +58,7 @@
         "bus": "2 mins"
       },
       "facilities": ["Kitchen", "Furnished", "Bike Storage", "Reception"],
-      "image_urls": ["https://picsum.photos/200/300", "https://picsum.photos/200/300"],
+      "image_urls": ["https://loremflickr.com/400/400/apartment?random=31", "https://loremflickr.com/400/400/apartment?random=32"],
       "total_price": {
         "entire_place": "£399",
         "shared_room": "£399",
@@ -81,7 +81,7 @@
         "bus": "2 mins"
       },
       "facilities": ["Kitchen", "Furnished", "Bike Storage", "Reception"],
-      "image_urls": ["https://picsum.photos/200/300", "https://picsum.photos/200/300"],
+      "image_urls": ["https://loremflickr.com/400/400/apartment?random=41", "https://loremflickr.com/400/400/apartment?random=42"],
       "total_price": {
         "entire_place": "£399",
         "shared_room": "£399",
@@ -103,7 +103,7 @@
         "bus": "2 mins"
       },
       "facilities": ["Kitchen", "Furnished", "Bike Storage", "Reception"],
-      "image_urls": ["https://picsum.photos/200/300", "https://picsum.photos/200/300"],
+      "image_urls": ["https://loremflickr.com/400/400/apartment?random=51", "https://loremflickr.com/400/400/apartment?random=52"],
       "total_price": {
         "entire_place": "£399",
         "shared_room": "£399",
