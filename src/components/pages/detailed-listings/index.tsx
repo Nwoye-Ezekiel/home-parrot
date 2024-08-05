@@ -153,7 +153,7 @@ export default function DetailedListings() {
                       </div>
                     )}
                   </div>
-                  <Button fullWidth color="primary" className="text-black">
+                  <Button fullWidth className="text-black bg-primary">
                     View Rooms
                   </Button>
                 </div>

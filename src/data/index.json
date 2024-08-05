@@ -26,7 +26,6 @@
     },
     {
       "id": 2,
-      "voucher": "£100 Uber Voucher",
       "name": "Janet Poole House",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel elementum nibh. Sed rutrum, enim eu dignissim porttitor, quam sem fermentum augue, non pharetra ligula diam ut ante.",
       "performance": "Price dropped",
@@ -49,7 +48,6 @@
     },
     {
       "id": 3,
-      "voucher": "£100 Uber Voucher",
       "name": "Janet Poole House",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel elementum nibh. Sed rutrum, enim eu dignissim porttitor, quam sem fermentum augue, non pharetra ligula diam ut ante.",
       "performance": "Price dropped",
@@ -72,7 +70,7 @@
     },
     {
       "id": 4,
-      "voucher": "£100 Uber Voucher",
+      "voucher": "£600 Uber Voucher",
       "name": "Janet Poole House",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel elementum nibh. Sed rutrum, enim eu dignissim porttitor, quam sem fermentum augue, non pharetra ligula diam ut ante.",
       "performance": "Price increased",
@@ -95,7 +93,6 @@
     },
     {
       "id": 5,
-      "voucher": "£100 Uber Voucher",
       "name": "Janet Poole House",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel elementum nibh. Sed rutrum, enim eu dignissim porttitor, quam sem fermentum augue, non pharetra ligula diam ut ante.",
       "performance": "Price dropped",

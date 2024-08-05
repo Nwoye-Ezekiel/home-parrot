@@ -1,5 +1,4 @@
 import AnimateOnScroll from 'components/animate-on-scroll';
-import React from 'react';
 
 export default function About() {
   return (
@@ -12,7 +11,7 @@ export default function About() {
           <AnimateOnScroll refIndex={2}>
             <h1 className="text-4xl md:text-5xl lg:text-6xl">About Us</h1>
           </AnimateOnScroll>
-          <h1 className="text-5xl md:text-[4rem] text-[5rem] absolute top-7 md:top-9 lg:top-12 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-[0.05] w-full">
+          <h1 className="text-5xl md:text-[4rem] lg:text-[5rem] absolute top-7 md:top-9 lg:top-12 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-[0.05] w-full">
             About Us
           </h1>
         </div>

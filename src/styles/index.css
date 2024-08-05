@@ -20,6 +20,12 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'proxima';
+  src: url('./fonts/ProximaNova.otf') format('opentype');
+  font-display: swap;
+}
+
 :root {
   --color-black: #000000;
   --color-white: #ffffff;
@@ -29,7 +35,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-weight: 300;
+  font-weight: 400;
   font-family: 'cabinet';
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;

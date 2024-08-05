@@ -22,7 +22,7 @@ const theme = createTheme({
       },
       styleOverrides: {
         root: {
-          ...tw`capitalize font-cabinet font-bold normal-case shadow-lg`,
+          ...tw`capitalize font-proxima normal-case shadow-lg`,
         },
       },
     },

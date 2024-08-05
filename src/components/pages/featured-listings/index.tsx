@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import data from 'data/index.json';
 import { Listing } from 'components/types';
 import {
@@ -27,19 +27,19 @@ export default function FeaturedListings() {
   return (
     <div
       id="listings"
-      className="flex flex-col px-20 py-24 space-y-16 bg-gradient-to-b to-white from-secondary/[.5]"
+      className="flex flex-col p-10 md:p-16 lg:p-20 space-y-8 md:space-y-12 lg:space-y-16 bg-gradient-to-b to-white from-secondary/[.5]"
     >
-      <div className="flex flex-col justify-center items-center space-y-8">
+      <div className="flex flex-col justify-center items-center space-y-4 md:space-y-6 lg:space-y-8">
         <div className="relative w-full text-center">
           <AnimateOnScroll refIndex={2}>
-            <h1 className="text-6xl">Featured Listings</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl">Featured Listings</h1>
           </AnimateOnScroll>
-          <h1 className="text-7xl absolute top-12 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-[0.05] w-full">
+          <h1 className="text-[2.5rem] md:text-[3.5rem] lg:text-[4.5rem] absolute top-7 md:top-9 lg:top-12 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-[0.05] w-full whitespace-nowrap">
             Featured Listings
           </h1>
         </div>
         <AnimateOnScroll refIndex={4}>
-          <p className="max-w-lg text-center text-xl">
+          <p className="max-w-lg text-center text-lg">
             Handpicked premium properties curated just for you.
           </p>
         </AnimateOnScroll>
@@ -80,8 +80,7 @@ export default function FeaturedListings() {
                   </div>
                 </div>
                 <Button
-                  color="primary"
-                  className="text-black"
+                  className="text-black bg-primary"
                   onClick={() => scrollToCard(`${hoveredCardId}_listing`)}
                 >
                   View Details
