@@ -8,7 +8,7 @@ interface ImagePreviewProps {
   handleClose: () => void;
 }
 
-const ImagePreview = ({ open, src = [], handleClose }: ImagePreviewProps) => {
+export default function ({ open, src = [], handleClose }: ImagePreviewProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = () => {
@@ -46,29 +46,40 @@ const ImagePreview = ({ open, src = [], handleClose }: ImagePreviewProps) => {
             alt={`Image ${currentIndex + 1}`}
           />
         )}
-        <div className="flex space-x-3 justify-center items-center mt-4">
-          <IconButton
-            className="w-8 h-8 bg-primary"
-            size="small"
-            onClick={handlePrev}
-            disabled={currentIndex === 0}
-            style={{ opacity: currentIndex === 0 ? 0.3 : 1 }}
-          >
-            <KeyboardArrowLeft className="p-1 text-black" />
-          </IconButton>
-          <IconButton
-            className="w-8 h-8 bg-primary"
-            size="small"
-            onClick={handleNext}
-            disabled={currentIndex === src.length - 1}
-            style={{ opacity: currentIndex === src.length - 1 ? 0.3 : 1 }}
-          >
-            <KeyboardArrowRight className="p-1 text-black" />
-          </IconButton>
+        <div className="flex flex-col space-y-6 justify-center items-center mt-4">
+          <div className="flex items-center space-x-2">
+            {Array.from(Array(src.length).keys()).map((i) => (
+              <span
+                key={`asset image indicator ${i}`}
+                className={`w-2 h-2 rounded-full ${
+                  currentIndex === i ? 'bg-primary' : 'bg-gray-100/[.3]'
+                }`}
+                onClick={() => setCurrentIndex(i)}
+              />
+            ))}
+          </div>
+          <div className="flex space-x-3 justify-center items-center">
+            <IconButton
+              className="w-8 h-8 bg-primary"
+              size="small"
+              onClick={handlePrev}
+              disabled={currentIndex === 0}
+              style={{ opacity: currentIndex === 0 ? 0.3 : 1 }}
+            >
+              <KeyboardArrowLeft className="p-1 text-black" />
+            </IconButton>
+            <IconButton
+              className="w-8 h-8 bg-primary"
+              size="small"
+              onClick={handleNext}
+              disabled={currentIndex === src.length - 1}
+              style={{ opacity: currentIndex === src.length - 1 ? 0.3 : 1 }}
+            >
+              <KeyboardArrowRight className="p-1 text-black" />
+            </IconButton>
+          </div>
         </div>
       </DialogContent>
     </Dialog>
   );
-};
-
-export default ImagePreview;
+}
