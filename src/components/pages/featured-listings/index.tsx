@@ -1,14 +1,7 @@
 import { useState } from 'react';
 import data from 'data/index.json';
 import { Listing } from 'components/types';
-import {
-  DirectionsWalk,
-  DriveEta,
-  DirectionsBus,
-  Sell,
-  Star,
-  StarBorder,
-} from '@mui/icons-material';
+import { DirectionsWalk, DriveEta, DirectionsBus, Sell, Star } from '@mui/icons-material';
 import { Button } from '@mui/material';
 import AnimateOnScroll from 'components/animate-on-scroll';
 
@@ -74,7 +67,7 @@ export default function FeaturedListings() {
                         return rating + 1 <= +listing.rating ? (
                           <Star fontSize="small" key={rating} className="text-primary" />
                         ) : (
-                          <StarBorder fontSize="small" key={rating} className="text-white" />
+                          <Star fontSize="small" key={rating} className="text-white/[.3]" />
                         );
                       })}
                   </div>

@@ -7,7 +7,6 @@ import {
   School,
   Apartment,
   Star,
-  StarBorder,
 } from '@mui/icons-material';
 import { Button } from '@mui/material';
 import AnimateOnScroll from 'components/animate-on-scroll';
@@ -56,7 +55,7 @@ export default function DetailedListings() {
                           return rating + 1 <= +listing.rating ? (
                             <Star fontSize="small" key={rating} className="text-primary" />
                           ) : (
-                            <StarBorder fontSize="small" key={rating} className="text-gray-700" />
+                            <Star fontSize="small" key={rating} className="text-black/[.1]" />
                           );
                         })}
                       {listing.reviews && (
