@@ -2,115 +2,265 @@
   "listings": [
     {
       "id": 1,
-      "voucher": "£100 Uber Voucher",
-      "name": "Janet Poole House",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel elementum nibh. Sed rutrum, enim eu dignissim porttitor, quam sem fermentum augue, non pharetra ligula diam ut ante.",
-      "performance": "Price dropped",
-      "starting_price": "£399",
-      "cheapest_period": "Cheapest in the past 5 months",
+      "voucher": "£50 Amazon Voucher",
+      "name": "Baker Street Apartments",
+      "description": "Spacious and modern apartments located in the heart of the city, close to major attractions and transport links.",
+      "performance": "Price increased",
+      "starting_price": "£450",
+      "cheapest_period": "Cheapest in the past 3 months",
       "distance": {
-        "walk": "4 mins",
-        "car": "2 mins",
-        "bus": "2 mins"
+        "walk": "10 mins",
+        "car": "5 mins",
+        "bus": "3 mins"
       },
-      "facilities": ["Kitchen", "Furnished", "On-site Laundry (Free)", "WiFi"],
-      "image_urls": ["https://loremflickr.com/400/400/apartment?random=11", "https://loremflickr.com/400/400/apartment?random=12"],
+      "facilities": ["Gym", "Swimming Pool", "WiFi", "Parking"],
+      "image_urls": [
+        "https://loremflickr.com/400/400/apartment?random=1",
+        "https://loremflickr.com/400/400/apartment?random=2"
+      ],
       "total_price": {
-        "entire_place": "£399",
-        "shared_room": "£399",
-        "private_room": "£399"
+        "entire_place": "£450",
+        "shared_room": "£300",
+        "private_room": "£350"
       },
-      "rating": "2",
-      "reviews": 1,
-      "featured": true
+      "rating": "4",
+      "reviews": 15,
+      "featured": false
     },
     {
       "id": 2,
-      "name": "Janet Poole House",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel elementum nibh. Sed rutrum, enim eu dignissim porttitor, quam sem fermentum augue, non pharetra ligula diam ut ante.",
-      "performance": "Price dropped",
-      "starting_price": "£399",
-      "cheapest_period": "Cheapest in the past 5 months",
+      "name": "Regent's Park Residence",
+      "description": "Elegant residence with a view of Regent's Park, offering luxurious living spaces and top-notch facilities.",
+      "performance": "New listing",
+      "starting_price": "£600",
+      "cheapest_period": "Cheapest in the past 1 month",
       "distance": {
-        "walk": "4 mins",
-        "bus": "2 mins"
+        "walk": "7 mins",
+        "bus": "4 mins"
       },
-      "facilities": ["Kitchen", "Furnished", "Bike Storage", "Reception"],
-      "image_urls": ["https://loremflickr.com/400/400/apartment?random=21", "https://loremflickr.com/400/400/apartment?random=22"],
+      "facilities": ["Garden", "24/7 Security", "Furnished", "On-site Laundry"],
+      "image_urls": [
+        "https://loremflickr.com/400/400/apartment?random=3",
+        "https://loremflickr.com/400/400/apartment?random=4"
+      ],
       "total_price": {
-        "entire_place": "£399",
-        "shared_room": "£399",
-        "private_room": "£399"
+        "entire_place": "£600",
+        "shared_room": "£400",
+        "private_room": "£500"
       },
-      "rating": "3",
-      "reviews": 10,
+      "rating": "5",
+      "reviews": 8,
       "featured": true
     },
     {
       "id": 3,
-      "name": "Janet Poole House",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel elementum nibh. Sed rutrum, enim eu dignissim porttitor, quam sem fermentum augue, non pharetra ligula diam ut ante.",
+      "name": "Westminster Flats",
+      "description": "Modern flats in a prime location, perfect for professionals and families alike, with excellent transport connectivity.",
       "performance": "Price dropped",
-      "starting_price": "£399",
-      "cheapest_period": "Cheapest in the past 5 months",
+      "starting_price": "£350",
+      "cheapest_period": "Cheapest in the past 4 months",
       "distance": {
-        "walk": "4 mins",
-        "bus": "2 mins"
+        "walk": "8 mins",
+        "bus": "5 mins"
       },
-      "facilities": ["Kitchen", "Furnished", "Bike Storage", "Reception"],
-      "image_urls": ["https://loremflickr.com/400/400/apartment?random=31", "https://loremflickr.com/400/400/apartment?random=32"],
+      "facilities": ["Pet Friendly", "Bike Storage", "Reception", "WiFi"],
+      "image_urls": [
+        "https://loremflickr.com/400/400/apartment?random=5",
+        "https://loremflickr.com/400/400/apartment?random=6"
+      ],
       "total_price": {
-        "entire_place": "£399",
-        "shared_room": "£399",
-        "private_room": "£399"
+        "entire_place": "£350",
+        "shared_room": "£250",
+        "private_room": "£300"
       },
-      "rating": "1",
-      "reviews": 9,
-      "featured": true
+      "rating": "3",
+      "reviews": 12,
+      "featured": false
     },
     {
       "id": 4,
-      "voucher": "£600 Uber Voucher",
-      "name": "Janet Poole House",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel elementum nibh. Sed rutrum, enim eu dignissim porttitor, quam sem fermentum augue, non pharetra ligula diam ut ante.",
+      "voucher": "£100 Starbucks Voucher",
+      "name": "Chelsea Harbour Apartments",
+      "description": "Luxury apartments with stunning views of the harbour, offering a serene living experience with premium amenities.",
       "performance": "Price increased",
-      "starting_price": "£399",
-      "cheapest_period": "Cheapest in the past 5 months",
+      "starting_price": "£800",
+      "cheapest_period": "Cheapest in the past 6 months",
       "distance": {
-        "walk": "4 mins",
-        "bus": "2 mins"
+        "walk": "12 mins",
+        "bus": "6 mins"
       },
-      "facilities": ["Kitchen", "Furnished", "Bike Storage", "Reception"],
-      "image_urls": ["https://loremflickr.com/400/400/apartment?random=41", "https://loremflickr.com/400/400/apartment?random=42"],
+      "facilities": ["Concierge Service", "Fitness Center", "Spa", "Rooftop Terrace"],
+      "image_urls": [
+        "https://loremflickr.com/400/400/apartment?random=7",
+        "https://loremflickr.com/400/400/apartment?random=8"
+      ],
       "total_price": {
-        "entire_place": "£399",
-        "shared_room": "£399",
-        "private_room": "£399"
+        "entire_place": "£800",
+        "shared_room": "£500",
+        "private_room": "£700"
       },
       "rating": "5",
-      "reviews": 20,
+      "reviews": 25,
       "featured": true
     },
     {
       "id": 5,
-      "name": "Janet Poole House",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel elementum nibh. Sed rutrum, enim eu dignissim porttitor, quam sem fermentum augue, non pharetra ligula diam ut ante.",
-      "performance": "Price dropped",
-      "starting_price": "£399",
-      "cheapest_period": "Cheapest in the past 5 months",
+      "name": "Kensington High Street Studios",
+      "description": "Chic studios located on Kensington High Street, ideal for students and young professionals, with vibrant surroundings.",
+      "performance": "New listing",
+      "starting_price": "£300",
+      "cheapest_period": "Cheapest in the past 2 months",
       "distance": {
-        "walk": "4 mins",
+        "walk": "5 mins",
         "bus": "2 mins"
       },
-      "facilities": ["Kitchen", "Furnished", "Bike Storage", "Reception"],
-      "image_urls": ["https://loremflickr.com/400/400/apartment?random=51", "https://loremflickr.com/400/400/apartment?random=52"],
+      "facilities": ["Study Room", "Game Room", "WiFi", "24/7 Security"],
+      "image_urls": [
+        "https://loremflickr.com/400/400/apartment?random=9",
+        "https://loremflickr.com/400/400/apartment?random=10"
+      ],
       "total_price": {
-        "entire_place": "£399",
-        "shared_room": "£399",
-        "private_room": "£399"
+        "entire_place": "£300",
+        "shared_room": "£200",
+        "private_room": "£250"
       },
-      "rating": "0",
-      "reviews": 3,
+      "rating": "4",
+      "reviews": 10,
+      "featured": true
+    },
+    {
+      "id": 6,
+      "voucher": "£75 Apple Voucher",
+      "name": "Greenwich Village Lofts",
+      "description": "Stylish lofts in the trendy Greenwich Village, offering an artistic living space with modern amenities and vibrant community.",
+      "performance": "Price dropped",
+      "starting_price": "£500",
+      "cheapest_period": "Cheapest in the past 2 months",
+      "distance": {
+        "walk": "6 mins",
+        "car": "3 mins",
+        "bus": "2 mins"
+      },
+      "facilities": ["Art Studio", "Pet Friendly", "WiFi", "Bike Storage"],
+      "image_urls": [
+        "https://loremflickr.com/400/400/apartment?random=61",
+        "https://loremflickr.com/400/400/apartment?random=62"
+      ],
+      "total_price": {
+        "entire_place": "£500",
+        "shared_room": "£350",
+        "private_room": "£400"
+      },
+      "rating": "4",
+      "reviews": 18,
+      "featured": true
+    },
+    {
+      "id": 7,
+      "voucher": "£100 Marks & Spencer Voucher",
+      "name": "Soho Square Residences",
+      "description": "Elegant residences in the heart of Soho, featuring modern design and top-tier facilities, perfect for urban living.",
+      "performance": "New listing",
+      "starting_price": "£700",
+      "cheapest_period": "Cheapest in the past 1 month",
+      "distance": {
+        "walk": "3 mins",
+        "car": "2 mins",
+        "bus": "1 min"
+      },
+      "facilities": ["Cinema Room", "Gym", "Concierge Service", "WiFi"],
+      "image_urls": [
+        "https://loremflickr.com/400/400/apartment?random=71",
+        "https://loremflickr.com/400/400/apartment?random=72"
+      ],
+      "total_price": {
+        "entire_place": "£700",
+        "shared_room": "£450",
+        "private_room": "£550"
+      },
+      "rating": "5",
+      "reviews": 30,
+      "featured": true
+    },
+    {
+      "id": 8,
+      "voucher": "£50 Amazon Voucher",
+      "name": "Kensington Gardens Apartments",
+      "description": "Luxury apartments overlooking Kensington Gardens, providing a peaceful and elegant living environment with exclusive amenities.",
+      "performance": "New listing",
+      "starting_price": "£800",
+      "cheapest_period": "Cheapest in the past 1 month",
+      "distance": {
+        "walk": "5 mins",
+        "car": "3 mins",
+        "bus": "2 mins"
+      },
+      "facilities": ["Swimming Pool", "Spa", "24/7 Security", "WiFi"],
+      "image_urls": [
+        "https://loremflickr.com/400/400/apartment?random=81",
+        "https://loremflickr.com/400/400/apartment?random=82"
+      ],
+      "total_price": {
+        "entire_place": "£800",
+        "shared_room": "£500",
+        "private_room": "£600"
+      },
+      "rating": "5",
+      "reviews": 25,
+      "featured": true
+    },
+    {
+      "id": 9,
+      "voucher": "£150 Starbucks Voucher",
+      "name": "Covent Garden Suites",
+      "description": "Modern suites in the bustling Covent Garden area, offering a vibrant living experience with easy access to theaters and restaurants.",
+      "performance": "Price dropped",
+      "starting_price": "£600",
+      "cheapest_period": "Cheapest in the past 3 months",
+      "distance": {
+        "walk": "2 mins",
+        "car": "1 min",
+        "bus": "1 min"
+      },
+      "facilities": ["Rooftop Terrace", "Fitness Center", "24/7 Concierge", "WiFi"],
+      "image_urls": [
+        "https://loremflickr.com/400/400/apartment?random=91",
+        "https://loremflickr.com/400/400/apartment?random=92"
+      ],
+      "total_price": {
+        "entire_place": "£600",
+        "shared_room": "£400",
+        "private_room": "£500"
+      },
+      "rating": "4",
+      "reviews": 15,
+      "featured": true
+    },
+    {
+      "id": 10,
+      "voucher": "£200 Selfridges Voucher",
+      "name": "Mayfair Penthouse",
+      "description": "Exclusive penthouse in Mayfair, featuring stunning views, luxurious interiors, and top-of-the-line facilities for a lavish lifestyle.",
+      "performance": "Price increased",
+      "starting_price": "£1200",
+      "cheapest_period": "Cheapest in the past 6 months",
+      "distance": {
+        "walk": "3 mins",
+        "car": "2 mins",
+        "bus": "2 mins"
+      },
+      "facilities": ["Private Elevator", "Butler Service", "Heated Pool", "WiFi"],
+      "image_urls": [
+        "https://loremflickr.com/400/400/apartment?random=101",
+        "https://loremflickr.com/400/400/apartment?random=102"
+      ],
+      "total_price": {
+        "entire_place": "£1200",
+        "shared_room": "£900",
+        "private_room": "£1000"
+      },
+      "rating": "5",
+      "reviews": 50,
       "featured": true
     }
   ]
