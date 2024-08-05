@@ -3,11 +3,12 @@ import { motion, useInView, useAnimation } from 'framer-motion';
 
 interface Props {
   refIndex?: number;
+  overflow?: boolean;
   children: JSX.Element;
   lastElement?: boolean;
 }
 
-const AnimateOnScroll = ({ children, refIndex, lastElement }: Props) => {
+const AnimateOnScroll = ({ children, refIndex, lastElement, overflow = true }: Props) => {
   const ref = useRef(null);
   const defaultDelay = 0.2;
   const additionalDelay = 0.17;
@@ -39,7 +40,7 @@ const AnimateOnScroll = ({ children, refIndex, lastElement }: Props) => {
   }, [isInView]);
 
   return (
-    <div ref={ref}>
+    <div ref={ref} style={{ overflow: overflow ? 'none' : 'hidden' }}>
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 50 },

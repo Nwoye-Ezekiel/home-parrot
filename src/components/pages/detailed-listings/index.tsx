@@ -14,7 +14,7 @@ import AnimateOnScroll from 'components/animate-on-scroll';
 
 export default function DetailedListings() {
   return (
-    <div className="flex flex-col px-20 py-24 space-y-16 bg-secondary/[.5]">
+    <div className="flex flex-col px-20 py-24 space-y-16 bg-primary/[.5]">
       <div className="flex flex-col justify-center items-center space-y-8">
         <div className="relative w-full text-center">
           <AnimateOnScroll refIndex={2}>
@@ -54,7 +54,7 @@ export default function DetailedListings() {
                       {listing.rating &&
                         [...Array(5).keys()].map((rating) => {
                           return rating + 1 <= +listing.rating ? (
-                            <Star fontSize="small" key={rating} className="text-secondary" />
+                            <Star fontSize="small" key={rating} className="text-primary" />
                           ) : (
                             <StarBorder fontSize="small" key={rating} className="text-gray-700" />
                           );
@@ -110,10 +110,10 @@ export default function DetailedListings() {
                       </div>
                     </div>
                     <div className="flex space-x-2 pt-0.5">
-                      <div className="bg-primary text-white px-2 p-1 w-fit text-sm font-medium rounded">
+                      <div className="bg-secondary text-white px-2 p-1 w-fit text-sm font-medium rounded">
                         {listing.cheapest_period}
                       </div>
-                      <div className="bg-primary text-white px-2 p-1 w-fit text-sm font-medium rounded">
+                      <div className="bg-secondary text-white px-2 p-1 w-fit text-sm font-medium rounded">
                         {listing.performance}
                       </div>
                     </div>

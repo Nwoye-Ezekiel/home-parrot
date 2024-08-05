@@ -6,8 +6,9 @@ module.exports = {
     colors: {
       white: '#fff',
       black: '#000',
-      secondary: '#fbd112',
-      primary: '#013D69',
+      transparent: 'transparent',
+      primary: '#fbd112',
+      secondary: '#013D69',
       tertiary: '#8C340F',
       green: '#315C0F',
       gray: {
@@ -28,6 +29,9 @@ module.exports = {
         clash: ['clash', 'ui-sans-serif', 'system-ui'],
         cabinet: ['cabinet', 'ui-sans-serif', 'system-ui'],
         backline: ['backline', 'ui-sans-serif', 'system-ui'],
+      },
+      screens: {
+        lgMd: '1200px',
       },
     },
   },

@@ -16,13 +16,13 @@ cd home-parrot
 Install all the project dependencies
 
 ```sh
-npm install
+yarn
 ```
 
 Start the development server to view the project on your browser
 
 ```sh
-npm start
+yarn start
 ```
 
 If your browser doesn't open the app automatically after it has loaded, you can simply type the server address shown on the terminal into your browser to open the app.
