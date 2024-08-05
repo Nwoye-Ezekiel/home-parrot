@@ -27,7 +27,17 @@ yarn start
 
 If your browser doesn't open the app automatically after it has loaded, you can simply type the server address shown on the terminal into your browser to open the app.
 
-You can as well view the app which is hosted on `Vercel` by clicking on this link 👉
+You can as well view the app which is hosted on **Vercel** by clicking on this link 👉
 [Home Parrot]
 
-[Home Parrot]: https://home-parrot.vercel.app/
+## Logo Crafting Process
+
+I took my time to craft the logo for this project using **Figma**. Here are some images showing the process:
+
+### Outline
+![Sketch](/src/assets/images/readme/outline.png)
+
+### Result
+![Result](/src/assets/images/readme/result.png)
+
+[home parrot]: https://home-parrot.vercel.app/

@@ -19,8 +19,8 @@ export default function FeaturedListings() {
 
   return (
     <div
-      id="listings"
-      className="flex flex-col p-10 md:p-16 lg:p-20 space-y-8 md:space-y-12 lg:space-y-16 bg-gradient-to-b to-white from-secondary/[.5]"
+      id="featured listings"
+      className="flex flex-col p-10 md:p-16 lg:p-20 space-y-8 md:space-y-12 lg:space-y-16 bg-gradient-to-b to-white from-secondary/[.5] scroll-m-20"
     >
       <div className="flex flex-col justify-center items-center space-y-4 md:space-y-6 lg:space-y-8">
         <div className="relative w-full text-center">

@@ -8,7 +8,7 @@ export default function Navigation({
   styleNav?: boolean;
   closeMenu?: () => void;
 }) {
-  const navigationLinks = ['home', 'about', 'listings'];
+  const navigationLinks = ['home', 'about', 'featured listings', 'detailed listings'];
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);

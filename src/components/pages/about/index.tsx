@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="flex flex-col justify-center items-center bg-gradient-to-b from-white to-secondary/[.5] p-10 md:p-16 lg:p-20 space-y-8 md:space-y-12 lg:space-y-16"
+      className="flex flex-col justify-center items-center bg-gradient-to-b from-white to-secondary/[.5] p-10 md:p-16 lg:p-20 space-y-8 md:space-y-12 lg:space-y-16 scroll-m-20"
     >
       <div className="flex flex-col justify-center items-center space-y-4 md:space-y-6 lg:space-y-8">
         <div className="relative w-full text-center">

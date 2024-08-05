@@ -13,7 +13,10 @@ import AnimateOnScroll from 'components/animate-on-scroll';
 
 export default function DetailedListings() {
   return (
-    <div className="flex flex-col p-10 md:p-16 lg:p-20 space-y-8 md:space-y-12 lg:space-y-16 bg-primary/[.5]">
+    <div
+      id="detailed listings"
+      className="flex flex-col p-10 md:p-16 lg:p-20 space-y-8 md:space-y-12 lg:space-y-16 bg-primary/[.5] scroll-m-20"
+    >
       <div className="flex flex-col justify-center items-center space-y-4 md:space-y-6 lg:space-y-8">
         <div className="relative w-full text-center">
           <AnimateOnScroll refIndex={2}>
@@ -35,7 +38,7 @@ export default function DetailedListings() {
             <div
               id={`${listing.id}_listing`}
               key={listing.id}
-              className="flex flex-col lgMd:flex-row p-5 shadow-lg bg-white w-full rounded-xl overflow-hidden relative gap-5"
+              className="flex flex-col lgMd:flex-row p-5 shadow-lg bg-white w-full rounded-xl overflow-hidden relative gap-5 scroll-m-20"
             >
               <div className="h-[12rem] w-full lgMd:h-auto lgMd:w-[25%]">
                 <div
@@ -47,17 +50,19 @@ export default function DetailedListings() {
               </div>
               <div className="flex flex-col space-y-5 w-full lgMd:w-[55%]">
                 <div>
-                  <div className="flex flex-wrap gap-1 mb-1">
+                  <div className="flex flex-wrap gap-2 mb-1">
                     <h3 className="font-clash font-semibold text-lg">{listing.name}</h3>
-                    <div className="flex items-center flex-shrink-0">
-                      {listing.rating &&
-                        [...Array(5).keys()].map((rating) => {
-                          return rating + 1 <= +listing.rating ? (
-                            <Star fontSize="small" key={rating} className="text-primary" />
-                          ) : (
-                            <Star fontSize="small" key={rating} className="text-black/[.1]" />
-                          );
-                        })}
+                    <div className="gap-1 flex items-center">
+                      <div className="flex items-center flex-shrink-0">
+                        {listing.rating &&
+                          [...Array(5).keys()].map((rating) => {
+                            return rating + 1 <= +listing.rating ? (
+                              <Star fontSize="small" key={rating} className="text-primary" />
+                            ) : (
+                              <Star fontSize="small" key={rating} className="text-black/[.1]" />
+                            );
+                          })}
+                      </div>
                       {listing.reviews && (
                         <span className="text-sm mt-1 flex justify-center items-center">
                           ({listing.reviews})
