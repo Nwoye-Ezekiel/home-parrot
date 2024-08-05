@@ -21,7 +21,7 @@ export default function Navigation({
       {navigationLinks.map((link, index) => (
         <AnimateOnScroll key={index} refIndex={index}>
           <button
-            className="flex justify-between items-center w-full bg-black/[.1] p-3 py-2.5 pr-1 rounded lg:bg-transparent lg:p-0"
+            className="flex justify-between items-center w-full bg-black/[.05] p-3 py-2.5 pr-1 rounded lg:bg-transparent lg:p-0"
             onClick={() => scrollToSection(link)}
           >
             <span

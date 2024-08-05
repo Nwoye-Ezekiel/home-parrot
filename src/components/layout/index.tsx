@@ -81,10 +81,13 @@ export default function Layout({ children }: { children: ReactNode }) {
         }}
       >
         <div className="flex justify-end">
-          <Close
-            className="bg-black text-white rounded-full p-1"
-            onClick={() => setOpenMenu(false)}
-          />
+          <div className="flex justify-between items-center w-full">
+            <h3 className="text-[22px]">Home Parrot</h3>
+            <Close
+              className="bg-black text-white rounded-full p-1"
+              onClick={() => setOpenMenu(false)}
+            />
+          </div>
         </div>
         <Navigation closeMenu={() => setOpenMenu(false)} />
       </Drawer>
