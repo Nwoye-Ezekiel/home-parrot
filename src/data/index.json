@@ -15,11 +15,11 @@
       },
       "facilities": ["Gym", "Swimming Pool", "WiFi", "Parking"],
       "image_urls": [
-        "https://loremflickr.com/400/400/apartment?random=11",
-        "https://loremflickr.com/400/400/apartment?random=12",
-        "https://loremflickr.com/400/400/apartment?random=13",
-        "https://loremflickr.com/400/400/apartment?random=14",
-        "https://loremflickr.com/400/400/apartment?random=15"
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=11",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=12",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=13",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=14",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=15"
       ],
       "total_price": {
         "entire_place": "£450",
@@ -43,11 +43,11 @@
       },
       "facilities": ["Garden", "24/7 Security", "Furnished", "On-site Laundry"],
       "image_urls": [
-        "https://loremflickr.com/400/400/apartment?random=21",
-        "https://loremflickr.com/400/400/apartment?random=22",
-        "https://loremflickr.com/400/400/apartment?random=23",
-        "https://loremflickr.com/400/400/apartment?random=24",
-        "https://loremflickr.com/400/400/apartment?random=25"
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=21",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=22",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=23",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=24",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=25"
       ],
       "total_price": {
         "entire_place": "£600",
@@ -71,11 +71,11 @@
       },
       "facilities": ["Pet Friendly", "Bike Storage", "Reception", "WiFi"],
       "image_urls": [
-        "https://loremflickr.com/400/400/apartment?random=31",
-        "https://loremflickr.com/400/400/apartment?random=32",
-        "https://loremflickr.com/400/400/apartment?random=33",
-        "https://loremflickr.com/400/400/apartment?random=34",
-        "https://loremflickr.com/400/400/apartment?random=35"
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=31",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=32",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=33",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=34",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=35"
       ],
       "total_price": {
         "entire_place": "£350",
@@ -100,11 +100,11 @@
       },
       "facilities": ["Concierge Service", "Fitness Center", "Spa", "Rooftop Terrace"],
       "image_urls": [
-        "https://loremflickr.com/400/400/apartment?random=41",
-        "https://loremflickr.com/400/400/apartment?random=42",
-        "https://loremflickr.com/400/400/apartment?random=43",
-        "https://loremflickr.com/400/400/apartment?random=44",
-        "https://loremflickr.com/400/400/apartment?random=45"
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=41",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=42",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=43",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=44",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=45"
       ],
       "total_price": {
         "entire_place": "£800",
@@ -128,11 +128,11 @@
       },
       "facilities": ["Study Room", "Game Room", "WiFi", "24/7 Security"],
       "image_urls": [
-        "https://loremflickr.com/400/400/apartment?random=51",
-        "https://loremflickr.com/400/400/apartment?random=52",
-        "https://loremflickr.com/400/400/apartment?random=53",
-        "https://loremflickr.com/400/400/apartment?random=54",
-        "https://loremflickr.com/400/400/apartment?random=55"
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=51",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=52",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=53",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=54",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=55"
       ],
       "total_price": {
         "entire_place": "£300",
@@ -158,11 +158,11 @@
       },
       "facilities": ["Art Studio", "Pet Friendly", "WiFi", "Bike Storage"],
       "image_urls": [
-        "https://loremflickr.com/400/400/apartment?random=61",
-        "https://loremflickr.com/400/400/apartment?random=62",
-        "https://loremflickr.com/400/400/apartment?random=63",
-        "https://loremflickr.com/400/400/apartment?random=64",
-        "https://loremflickr.com/400/400/apartment?random=65"
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=61",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=62",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=63",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=64",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=65"
       ],
       "total_price": {
         "entire_place": "£500",
@@ -188,11 +188,11 @@
       },
       "facilities": ["Cinema Room", "Gym", "Concierge Service", "WiFi"],
       "image_urls": [
-        "https://loremflickr.com/400/400/apartment?random=71",
-        "https://loremflickr.com/400/400/apartment?random=72",
-        "https://loremflickr.com/400/400/apartment?random=73",
-        "https://loremflickr.com/400/400/apartment?random=74",
-        "https://loremflickr.com/400/400/apartment?random=75"
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=71",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=72",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=73",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=74",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=75"
       ],
       "total_price": {
         "entire_place": "£700",
@@ -218,11 +218,11 @@
       },
       "facilities": ["Swimming Pool", "Spa", "24/7 Security", "WiFi"],
       "image_urls": [
-        "https://loremflickr.com/400/400/apartment?random=81",
-        "https://loremflickr.com/400/400/apartment?random=82",
-        "https://loremflickr.com/400/400/apartment?random=83",
-        "https://loremflickr.com/400/400/apartment?random=84",
-        "https://loremflickr.com/400/400/apartment?random=85"
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=81",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=82",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=83",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=84",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=85"
       ],
       "total_price": {
         "entire_place": "£800",
@@ -248,11 +248,11 @@
       },
       "facilities": ["Rooftop Terrace", "Fitness Center", "24/7 Concierge", "WiFi"],
       "image_urls": [
-        "https://loremflickr.com/400/400/apartment?random=91",
-        "https://loremflickr.com/400/400/apartment?random=92",
-        "https://loremflickr.com/400/400/apartment?random=93",
-        "https://loremflickr.com/400/400/apartment?random=94",
-        "https://loremflickr.com/400/400/apartment?random=95"
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=91",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=92",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=93",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=94",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=95"
       ],
       "total_price": {
         "entire_place": "£600",
@@ -278,11 +278,11 @@
       },
       "facilities": ["Private Elevator", "Butler Service", "Heated Pool", "WiFi"],
       "image_urls": [
-        "https://loremflickr.com/400/400/apartment?random=01",
-        "https://loremflickr.com/400/400/apartment?random=02",
-        "https://loremflickr.com/400/400/apartment?random=03",
-        "https://loremflickr.com/400/400/apartment?random=04",
-        "https://loremflickr.com/400/400/apartment?random=05"
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=01",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=02",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=03",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=04",
+        "https://loremflickr.com/400/400/apartment,Penthouse,Suite,Housing,Residence,Rental?random=05"
       ],
       "total_price": {
         "entire_place": "£1200",

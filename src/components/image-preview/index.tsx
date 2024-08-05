@@ -50,8 +50,8 @@ export default function ({ open, src = [], handleClose }: ImagePreviewProps) {
           <div className="flex items-center space-x-2">
             {Array.from(Array(src.length).keys()).map((i) => (
               <span
-                key={`asset image indicator ${i}`}
-                className={`w-2 h-2 rounded-full ${
+                key={`image indicator ${i}`}
+                className={`w-2 h-2 rounded-full cursor-pointer ${
                   currentIndex === i ? 'bg-primary' : 'bg-gray-100/[.3]'
                 }`}
                 onClick={() => setCurrentIndex(i)}
