@@ -91,7 +91,7 @@ export default function FeaturedListings() {
                   style={{
                     backgroundImage: `url(${listing.image_urls[0]})`,
                   }}
-                  className="h-[12rem] bg-no-repeat bg-center bg-cover"
+                  className="h-[12rem] bg-secondary/[.2] bg-no-repeat bg-center bg-cover"
                 ></div>
                 {listing.voucher && (
                   <div className="absolute bottom-0 left-0 w-full p-2 bg-primary text-white text-sm rounded-t text-center">

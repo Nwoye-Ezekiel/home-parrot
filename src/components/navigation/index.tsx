@@ -1,4 +1,3 @@
-import { useMediaQuery } from '@mui/material';
 import { KeyboardArrowRight } from '@mui/icons-material';
 import AnimateOnScroll from 'components/animate-on-scroll';
 
@@ -10,7 +9,6 @@ export default function Navigation({
   closeMenu?: () => void;
 }) {
   const navigationLinks = ['home', 'about', 'listings'];
-  const isDesktop = useMediaQuery('(min-width: 1024px)');
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -21,7 +19,7 @@ export default function Navigation({
   return (
     <div className="flex flex-col lg:flex-row justify-center lg:items-center gap-5 lg:gap-8">
       {navigationLinks.map((link, index) => (
-        <AnimateOnScroll key={index} refIndex={isDesktop ? index : index + 2}>
+        <AnimateOnScroll key={index} refIndex={index}>
           <button
             className="flex justify-between items-center w-full bg-black/[.1] p-3 py-2.5 pr-1 rounded lg:bg-transparent lg:p-0"
             onClick={() => scrollToSection(link)}
