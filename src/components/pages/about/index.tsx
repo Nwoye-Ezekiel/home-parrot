@@ -5,14 +5,14 @@ export default function About() {
   return (
     <div
       id="about"
-      className="flex flex-col justify-center items-center bg-gradient-to-b from-white to-secondary/[.5] px-20 py-24 space-y-16"
+      className="flex flex-col justify-center items-center bg-gradient-to-b from-white to-secondary/[.5] p-10 md:p-16 lg:p-20 space-y-8 md:space-y-12 lg:space-y-16"
     >
-      <div className="flex flex-col justify-center items-center space-y-8">
+      <div className="flex flex-col justify-center items-center space-y-4 md:space-y-6 lg:space-y-8">
         <div className="relative w-full text-center">
           <AnimateOnScroll refIndex={2}>
-            <h1 className="text-6xl">About Us</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl">About Us</h1>
           </AnimateOnScroll>
-          <h1 className="text-[5rem] absolute top-12 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-[0.05] w-full">
+          <h1 className="text-5xl md:text-[4rem] text-[5rem] absolute top-7 md:top-9 lg:top-12 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-[0.05] w-full">
             About Us
           </h1>
         </div>
@@ -24,10 +24,10 @@ export default function About() {
           </p>
         </AnimateOnScroll>
       </div>
-      <div className="flex space-x-10">
-        <div className="bg-black py-10 px-5 max-w-[25rem] rounded-3xl">
+      <div className="flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-10">
+        <div className="bg-black py-10 px-5 w-full max-w-lg lg:max-w-[25rem] rounded-3xl">
           <AnimateOnScroll refIndex={6}>
-            <h3 className="text-2xl text-white mb-3">Who We Are</h3>
+            <h3 className="text-xl md:text-[22px] lg:text-2xl text-white mb-3">Who We Are</h3>
           </AnimateOnScroll>
           <div className="space-y-2">
             <AnimateOnScroll refIndex={8}>
@@ -46,9 +46,9 @@ export default function About() {
             </AnimateOnScroll>
           </div>
         </div>
-        <div className="bg-black py-10 px-5 max-w-[25rem] rounded-3xl">
+        <div className="bg-black py-10 px-5 w-full max-w-lg lg:max-w-[25rem] rounded-3xl">
           <AnimateOnScroll refIndex={12}>
-            <h3 className="text-2xl text-white mb-3">What We Do</h3>
+            <h3 className="text-xl md:text-[22px] lg:text-2xl text-white mb-3">What We Do</h3>
           </AnimateOnScroll>
           <div className="space-y-2">
             <AnimateOnScroll refIndex={14}>

@@ -21,7 +21,7 @@ export default function Navigation({
   return (
     <div className="flex flex-col lg:flex-row justify-center lg:items-center gap-5 lg:gap-8">
       {navigationLinks.map((link, index) => (
-        <AnimateOnScroll key={index} refIndex={isDesktop ? index : index++}>
+        <AnimateOnScroll key={index} refIndex={isDesktop ? index : index + 2}>
           <button
             className="flex justify-between items-center w-full bg-black/[.1] p-3 py-2.5 pr-1 rounded lg:bg-transparent lg:p-0"
             onClick={() => scrollToSection(link)}
