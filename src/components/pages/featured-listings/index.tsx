@@ -80,7 +80,7 @@ export default function FeaturedListings() {
                   </div>
                 </div>
                 <Button
-                  color="secondary"
+                  color="primary"
                   className="text-black"
                   onClick={() => scrollToCard(`${hoveredCardId}_listing`)}
                 >
